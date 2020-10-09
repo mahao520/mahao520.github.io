@@ -156,7 +156,32 @@
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                
+                <h2 id="numpy库的基本用法："><a href="#numpy库的基本用法：" class="headerlink" title="numpy库的基本用法："></a>numpy库的基本用法：</h2><p><strong><em>创建一维数组：</em></strong><br><code>arr1 = np.array([1,2,3,4,5])</code></p>
+<hr>
+<p><strong><em>创建二维数组：</em></strong><br><code>arr2 = np.array([[1,1],[2,2],[3,3]])</code></p>
+<hr>
+<p><strong><em>查看数组结构：</em></strong><br><code>print(arr1.shape)</code><br><code>print(arr2.shape)</code></p>
+<hr>
+<p><strong><em>查看数组维度：</em></strong><br><code>print(arr1.ndim)</code><br><code>print(arr2.ndim)</code></p>
+<hr>
+<p><strong><em>查看元素个数：</em></strong><br><code>print(arr1.size)</code><br><code>print(arr2.size)</code></p>
+<hr>
+<p><strong><em>通过特殊函数构建数组：</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#1. 类似pyton中的range方法：</span><br><span class="line">print(np.arange(0, 10, 2))</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong><em>等差数列：</em></strong><br><code>print(np.linspace(1, 10, 4, endpoint=True))  # 等分成几个数， a1, an都包含</code><br><code>print(np.linspace(1, 10, 4, endpoint=False)) # 等分成多少分，几个区间， an不显示【主要用在弧度分割】</code><br><img src="https://i.loli.net/2020/10/09/rc2wAquyHDfCvEB.png" alt="001.jpg"></p>
+<hr>
+<p><strong><em>等比数列：</em></strong><br><code>print(np.logspace(0, 2, 3,base=10.0)) # a1: base**start,   an:  base**stop(base为底数)</code><br><code>print(np.logspace(1, 5, 5, base=2))</code><br><img src="https://i.loli.net/2020/10/09/emqEcsT5au4WLUr.png" alt="002.png"></p>
+<hr>
+<p><strong><em>全零数组：</em></strong><br><code>print(np.zeros((3,)))</code><br><code>print(np.zeros((3,4)))</code><br><img src="https://i.loli.net/2020/10/09/5MX4i1KNoJW9UTc.png" alt="003.png"></p>
+<hr>
+<p><strong><em>全一：</em></strong><br><code>print(np.ones((3,4)))</code><br><img src="https://i.loli.net/2020/10/09/LvN59gXWH8hbj3V.png" alt="004.png"></p>
+<hr>
+<p><strong><em>单位数组：</em></strong><br><code>print(np.eye(3))</code><br><img src="https://i.loli.net/2020/10/09/Lw5jkdO8BrcmNeo.png" alt="005.png"></p>
+<hr>
+<p><strong><em>对角数组：</em></strong>：<br><code>print(np.diag([1,2,3]))</code><br><img src="https://i.loli.net/2020/10/09/1EgjcFbxZ5GMwRz.png" alt="006.png"></p>
+<hr>
+
             </div>
 
             <!-- Post Comments -->
